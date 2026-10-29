@@ -1,0 +1,8 @@
+"measure","n"
+"Person source rows",425352
+"Joined person rows",425352
+"Rows without matched vehicle",17088
+"Rows without matched accident",0
+"Rows with unknown vehicle group",20669
+"Rows with unclassified injury outcome",0
+"Analysis rows (matched vehicle, known group, classified outcome)",404683
