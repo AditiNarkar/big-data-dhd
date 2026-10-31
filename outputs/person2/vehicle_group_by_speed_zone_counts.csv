@@ -1,0 +1,56 @@
+"vehicle_group","speed_zone","people_n"
+"Car/light vehicle","60",96688
+"Bus","60",1229
+"Motorcycle","60",6266
+"Other","60",5930
+"Truck/heavy vehicle","60",1529
+"Car/light vehicle","100",36358
+"Bus","100",596
+"Motorcycle","100",3578
+"Other","100",727
+"Truck/heavy vehicle","100",2386
+"Car/light vehicle","110",2945
+"Bus","110",99
+"Motorcycle","110",108
+"Other","110",17
+"Truck/heavy vehicle","110",305
+"Car/light vehicle","30",305
+"Bus","30",3
+"Motorcycle","30",61
+"Other","30",89
+"Truck/heavy vehicle","30",5
+"Car/light vehicle","40",12933
+"Bus","40",311
+"Motorcycle","40",1395
+"Other","40",3048
+"Truck/heavy vehicle","40",217
+"Car/light vehicle","50",38148
+"Bus","50",500
+"Motorcycle","50",3285
+"Other","50",4251
+"Truck/heavy vehicle","50",435
+"Car/light vehicle","70",21519
+"Bus","70",249
+"Motorcycle","70",961
+"Other","70",525
+"Truck/heavy vehicle","70",416
+"Car/light vehicle","75",34
+"Bus","75",0
+"Motorcycle","75",1
+"Other","75",1
+"Truck/heavy vehicle","75",1
+"Car/light vehicle","80",50352
+"Bus","80",657
+"Motorcycle","80",2890
+"Other","80",795
+"Truck/heavy vehicle","80",1588
+"Car/light vehicle","90",843
+"Bus","90",30
+"Motorcycle","90",43
+"Other","90",10
+"Truck/heavy vehicle","90",38
+"Car/light vehicle","Unknown/other",13441
+"Bus","Unknown/other",162
+"Motorcycle","Unknown/other",2981
+"Other","Unknown/other",1846
+"Truck/heavy vehicle","Unknown/other",226

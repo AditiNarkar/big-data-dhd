@@ -1,0 +1,5 @@
+"actual","predicted","people_n"
+"Lower severity","Lower severity",65691
+"Lower severity","Serious/fatal",1334
+"Serious/fatal","Lower severity",12633
+"Serious/fatal","Serious/fatal",1669

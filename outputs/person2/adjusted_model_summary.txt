@@ -1,0 +1,108 @@
+
+Call:
+glm(formula = serious_fatal ~ vehicle_group_model + age_group_model + 
+    speed_zone_model + weather_model + surface_model + accident_type_model, 
+    family = binomial(), data = training)
+
+Coefficients:
+                                                       Estimate Std. Error
+(Intercept)                                          -2.152e+00  1.475e-02
+vehicle_group_modelBus                               -9.470e-01  6.891e-02
+vehicle_group_modelMotorcycle                         1.722e+00  1.797e-02
+vehicle_group_modelOther                              1.328e+00  1.931e-02
+vehicle_group_modelTruck/heavy vehicle               -9.578e-01  4.558e-02
+age_group_model0-4                                   -1.002e+00  5.474e-02
+age_group_model13-15                                 -3.718e-01  4.740e-02
+age_group_model16-17                                 -8.795e-02  4.021e-02
+age_group_model18-21                                 -6.078e-05  1.978e-02
+age_group_model22-25                                  1.554e-02  1.974e-02
+age_group_model26-29                                 -9.102e-03  2.052e-02
+age_group_model40-49                                  6.996e-02  1.759e-02
+age_group_model5-12                                  -6.793e-01  3.771e-02
+age_group_model50-59                                  1.970e-01  1.833e-02
+age_group_model60-64                                  3.457e-01  2.518e-02
+age_group_model65-69                                  5.410e-01  2.736e-02
+age_group_model70+                                    1.079e+00  2.004e-02
+age_group_modelUnknown                               -1.227e+00  5.449e-02
+speed_zone_model100                                   6.670e-01  1.514e-02
+speed_zone_model110                                   5.999e-01  4.250e-02
+speed_zone_model30                                   -6.206e-01  1.499e-01
+speed_zone_model40                                   -3.455e-01  2.612e-02
+speed_zone_model50                                   -8.046e-02  1.641e-02
+speed_zone_model70                                    2.236e-01  2.054e-02
+speed_zone_model75                                    4.708e-01  3.974e-01
+speed_zone_model80                                    3.391e-01  1.462e-02
+speed_zone_model90                                    6.424e-01  8.101e-02
+speed_zone_modelUnknown/other                        -4.146e-01  2.712e-02
+weather_modelFog                                      1.061e-01  5.378e-02
+weather_modelOther weather                           -1.749e-01  9.409e-02
+weather_modelRaining                                 -5.532e-02  2.659e-02
+weather_modelStrong winds                            -2.923e-01  9.248e-02
+weather_modelUnknown                                 -4.197e-01  2.483e-02
+surface_modelOther surface                           -5.303e-01  7.445e-02
+surface_modelUnknown                                 -6.106e-01  3.504e-02
+surface_modelWet                                     -3.803e-02  2.241e-02
+accident_type_modelCollision with a fixed object      1.410e+00  1.404e-02
+accident_type_modelcollision with some other object   3.002e-01  5.381e-02
+accident_type_modelFall from or in moving vehicle     2.070e-01  6.748e-02
+accident_type_modelNo collision and no object struck  4.197e-02  3.003e-02
+accident_type_modelOther accident                     1.645e-01  1.831e-01
+accident_type_modelStruck animal                      1.101e-01  5.429e-02
+accident_type_modelStruck Pedestrian                 -2.492e+00  8.499e-02
+accident_type_modelVehicle overturned (no collision)  5.127e-01  2.625e-02
+                                                      z value Pr(>|z|)    
+(Intercept)                                          -145.900  < 2e-16 ***
+vehicle_group_modelBus                                -13.743  < 2e-16 ***
+vehicle_group_modelMotorcycle                          95.824  < 2e-16 ***
+vehicle_group_modelOther                               68.761  < 2e-16 ***
+vehicle_group_modelTruck/heavy vehicle                -21.014  < 2e-16 ***
+age_group_model0-4                                    -18.306  < 2e-16 ***
+age_group_model13-15                                   -7.844 4.37e-15 ***
+age_group_model16-17                                   -2.187  0.02873 *  
+age_group_model18-21                                   -0.003  0.99755    
+age_group_model22-25                                    0.788  0.43098    
+age_group_model26-29                                   -0.444  0.65740    
+age_group_model40-49                                    3.977 6.97e-05 ***
+age_group_model5-12                                   -18.014  < 2e-16 ***
+age_group_model50-59                                   10.752  < 2e-16 ***
+age_group_model60-64                                   13.733  < 2e-16 ***
+age_group_model65-69                                   19.775  < 2e-16 ***
+age_group_model70+                                     53.846  < 2e-16 ***
+age_group_modelUnknown                                -22.523  < 2e-16 ***
+speed_zone_model100                                    44.060  < 2e-16 ***
+speed_zone_model110                                    14.116  < 2e-16 ***
+speed_zone_model30                                     -4.141 3.46e-05 ***
+speed_zone_model40                                    -13.230  < 2e-16 ***
+speed_zone_model50                                     -4.904 9.41e-07 ***
+speed_zone_model70                                     10.889  < 2e-16 ***
+speed_zone_model75                                      1.185  0.23615    
+speed_zone_model80                                     23.190  < 2e-16 ***
+speed_zone_model90                                      7.930 2.19e-15 ***
+speed_zone_modelUnknown/other                         -15.290  < 2e-16 ***
+weather_modelFog                                        1.973  0.04845 *  
+weather_modelOther weather                             -1.859  0.06299 .  
+weather_modelRaining                                   -2.081  0.03747 *  
+weather_modelStrong winds                              -3.161  0.00157 ** 
+weather_modelUnknown                                  -16.904  < 2e-16 ***
+surface_modelOther surface                             -7.123 1.06e-12 ***
+surface_modelUnknown                                  -17.425  < 2e-16 ***
+surface_modelWet                                       -1.697  0.08967 .  
+accident_type_modelCollision with a fixed object      100.428  < 2e-16 ***
+accident_type_modelcollision with some other object     5.578 2.43e-08 ***
+accident_type_modelFall from or in moving vehicle       3.067  0.00216 ** 
+accident_type_modelNo collision and no object struck    1.398  0.16217    
+accident_type_modelOther accident                       0.898  0.36900    
+accident_type_modelStruck animal                        2.028  0.04252 *  
+accident_type_modelStruck Pedestrian                  -29.327  < 2e-16 ***
+accident_type_modelVehicle overturned (no collision)   19.531  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 300961  on 323355  degrees of freedom
+Residual deviance: 260198  on 323312  degrees of freedom
+AIC: 260286
+
+Number of Fisher Scoring iterations: 7
+

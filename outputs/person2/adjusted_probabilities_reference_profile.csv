@@ -1,0 +1,6 @@
+"vehicle_group_model","age_group_model","speed_zone_model","weather_model","surface_model","accident_type_model","adjusted_probability","adjusted_probability_pct"
+"Car/light vehicle","30-39","60","Clear","Dry","Collision with vehicle",0.104187706740362,10.4187706740362
+"Bus","30-39","60","Clear","Dry","Collision with vehicle",0.0431686677641384,4.31686677641384
+"Motorcycle","30-39","60","Clear","Dry","Collision with vehicle",0.394293321142997,39.4293321142997
+"Other","30-39","60","Clear","Dry","Collision with vehicle",0.304999454496975,30.4999454496975
+"Truck/heavy vehicle","30-39","60","Clear","Dry","Collision with vehicle",0.0427234569697748,4.27234569697748

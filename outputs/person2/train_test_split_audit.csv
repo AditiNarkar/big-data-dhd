@@ -1,0 +1,3 @@
+"split","accidents_n","people_n","serious_fatal_n","serious_fatal_pct"
+"Training",143989,323356,56931,17.606291517708
+"Test",35997,81327,14302,17.5857956152323
