@@ -1,9 +1,3 @@
-# Person 2: adjusted logistic-regression analysis
-# Run from the project root:
-#   Rscript scripts/02_person2_model.R
-#
-# This script uses only base R and reads Person 1's supplied analysis file.
-
 options(stringsAsFactors = FALSE)
 
 input_file <- file.path("outputs", "person1", "analysis_person_level.csv")
