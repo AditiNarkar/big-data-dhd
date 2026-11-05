@@ -28,7 +28,7 @@ The script uses base R and writes its derived files to `outputs/person1/`. It do
 
 ## Results snapshot
 
-The join retained all 425,352 source person rows without row multiplication and all had a matching accident record. 17,088 people had no matched vehicle; 20,669 rows were in an unknown/not-applicable vehicle group. The analysis dataset contains 404,683 people. No injury outcomes were unclassified.
+The join retained all 425,352 source person rows without row multiplication and all had a matching accident record. 17,088 people had no matched vehicle, and a separate 3,581 had a matched vehicle explicitly coded as unknown/not applicable; both groups are excluded. The analysis dataset contains 404,683 people. No injury outcomes were unclassified.
 
 | Vehicle group | People | Serious/fatal | Percent |
 |---|---:|---:|---:|

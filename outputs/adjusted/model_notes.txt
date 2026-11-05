@@ -1,0 +1,7 @@
+Person 2 modelling notes
+The primary model uses vehicle group, age group, speed zone, weather, road surface and accident type.
+Vehicle occupancy and light condition are not in Person 1's supplied analysis file, so this script does not include them.
+Special speed-zone codes are combined as Unknown/other rather than interpreted as posted speed limits.
+The Other vehicle group is heterogeneous and largely consists of bicyclists; describe this limitation in the report.
+The train/test split is by accident to avoid data leakage. The models show association, not causation.
+Reference-profile probabilities use: age 30-39, speed zone 60, clear weather, dry surface and collision with vehicle.

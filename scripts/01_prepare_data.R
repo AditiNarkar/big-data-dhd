@@ -50,7 +50,10 @@ joined <- merge(joined, surface, by = "ACCIDENT_NO", all.x = TRUE, sort = FALSE)
 # unusual vehicle types are grouped as Other; unknown/not-applicable stay Unknown.
 vehicle_group <- function(x) {
   out <- rep("Other", length(x))
-  out[is.na(x) | x %in% c("Not Known", "Not Applicable")] <- "Unknown"
+  # Keep an unmatched Person-to-Vehicle join distinct from a matched vehicle
+  # whose source type is explicitly unknown/not applicable.
+  out[is.na(x)] <- NA_character_
+  out[!is.na(x) & x %in% c("Not Known", "Not Applicable")] <- "Unknown"
   out[x %in% c("Car", "Station Wagon", "Utility", "Panel Van", "Taxi",
                "Light Commercial Vehicle (Rigid) <= 4.5 Tonnes GVM")] <- "Car/light vehicle"
   out[x %in% c("Motor Cycle", "Motor Scooter", "Moped")] <- "Motorcycle"
@@ -71,10 +74,10 @@ joined$serious_fatal_label <- factor(joined$serious_fatal, levels = c(0, 1),
 # Audit counts are written before filtering so dropped/unmatched records are visible.
 audit <- data.frame(
   measure = c("Person source rows", "Joined person rows", "Rows without matched vehicle",
-              "Rows without matched accident", "Rows with unknown vehicle group",
+              "Rows without matched accident", "Rows with matched unknown/not-applicable vehicle type",
               "Rows with unclassified injury outcome", "Analysis rows (matched vehicle, known group, classified outcome)"),
   n = c(nrow(person), nrow(joined), sum(is.na(joined$VEHICLE_TYPE_DESC)),
-        sum(is.na(joined$ACCIDENT_DATE)), sum(joined$vehicle_group == "Unknown"),
+        sum(is.na(joined$ACCIDENT_DATE)), sum(joined$vehicle_group == "Unknown", na.rm = TRUE),
         sum(is.na(joined$serious_fatal)),
         sum(!is.na(joined$VEHICLE_TYPE_DESC) & joined$vehicle_group != "Unknown" &
               !is.na(joined$serious_fatal)))

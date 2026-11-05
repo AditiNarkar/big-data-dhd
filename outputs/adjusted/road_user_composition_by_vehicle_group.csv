@@ -1,0 +1,41 @@
+"vehicle_group","road_user_type","people_n"
+"Car/light vehicle","Bicyclists",0
+"Bus","Bicyclists",0
+"Motorcycle","Bicyclists",0
+"Other","Bicyclists",18202
+"Truck/heavy vehicle","Bicyclists",0
+"Car/light vehicle","Drivers",257120
+"Bus","Drivers",1704
+"Motorcycle","Drivers",0
+"Other","Drivers",2100
+"Truck/heavy vehicle","Drivers",8451
+"Car/light vehicle","E-scooter Rider",0
+"Bus","E-scooter Rider",0
+"Motorcycle","E-scooter Rider",1
+"Other","E-scooter Rider",23
+"Truck/heavy vehicle","E-scooter Rider",0
+"Car/light vehicle","Motorcyclists",0
+"Bus","Motorcyclists",0
+"Motorcycle","Motorcyclists",25919
+"Other","Motorcyclists",5
+"Truck/heavy vehicle","Motorcyclists",0
+"Car/light vehicle","Not Known",1675
+"Bus","Not Known",404
+"Motorcycle","Not Known",85
+"Other","Not Known",554
+"Truck/heavy vehicle","Not Known",22
+"Car/light vehicle","Passengers",83481
+"Bus","Passengers",2814
+"Motorcycle","Passengers",0
+"Other","Passengers",621
+"Truck/heavy vehicle","Passengers",540
+"Car/light vehicle","Pedestrians",21
+"Bus","Pedestrians",1
+"Motorcycle","Pedestrians",2
+"Other","Pedestrians",1
+"Truck/heavy vehicle","Pedestrians",3
+"Car/light vehicle","Pillion Passengers",0
+"Bus","Pillion Passengers",0
+"Motorcycle","Pillion Passengers",934
+"Other","Pillion Passengers",0
+"Truck/heavy vehicle","Pillion Passengers",0

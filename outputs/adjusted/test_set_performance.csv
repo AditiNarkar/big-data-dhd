@@ -1,0 +1,6 @@
+"metric","value"
+"ROC_AUC",0.757829729460895
+"Brier_score",0.125106373794688
+"Accuracy_at_0.5",0.828261217061984
+"Sensitivity_at_0.5",0.116696965459376
+"Specificity_at_0.5",0.980096978739276
