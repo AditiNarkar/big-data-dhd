@@ -1,7 +1,7 @@
 options(stringsAsFactors = FALSE)
 
 data_dir <- "data"
-output_dir <- "outputs/person1"
+output_dir <- "outputs/unadjusted"
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 
 read_csv <- function(name) {

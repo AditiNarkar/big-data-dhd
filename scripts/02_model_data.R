@@ -1,7 +1,7 @@
 options(stringsAsFactors = FALSE)
 
-input_file <- file.path("outputs", "person1", "analysis_person_level.csv")
-output_dir <- file.path("outputs", "person2")
+input_file <- file.path("outputs", "unadjusted", "analysis_person_level.csv")
+output_dir <- file.path("outputs", "adjusted")
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 
 if (!file.exists(input_file)) stop("Person 1 handoff file not found: ", input_file)
@@ -220,7 +220,6 @@ text(seq_len(nrow(reference)), reference$adjusted_probability_pct,
 dev.off()
 
 writeLines(c(
-  "Person 2 modelling notes",
   "The primary model uses vehicle group, age group, speed zone, weather, road surface and accident type.",
   "Vehicle occupancy and light condition are not in Person 1's supplied analysis file, so this script does not include them.",
   "Special speed-zone codes are combined as Unknown/other rather than interpreted as posted speed limits.",
@@ -233,5 +232,3 @@ saveRDS(unadjusted_model, file.path(output_dir, "unadjusted_model.rds"))
 saveRDS(adjusted_model, file.path(output_dir, "adjusted_model.rds"))
 writeLines(capture.output(summary(adjusted_model)),
            file.path(output_dir, "adjusted_model_summary.txt"))
-
-cat("Person 2 model analysis complete. Outputs written to", output_dir, "\n")
