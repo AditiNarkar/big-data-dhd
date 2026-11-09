@@ -1,0 +1,3 @@
+"Resid. Df","Resid. Dev","Df","Deviance","Pr(>Chi)","model"
+323312,260198.003662961,NA,NA,NA,"Adjusted main-effects model"
+323273,259750.04039252,39,447.9632704416,6.2998696868967e-71,"Adjusted interaction model"

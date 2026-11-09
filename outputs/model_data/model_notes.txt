@@ -1,4 +1,3 @@
-Person 2 modelling notes
 The primary model uses vehicle group, age group, speed zone, weather, road surface and accident type.
 Vehicle occupancy and light condition are not in Person 1's supplied analysis file, so this script does not include them.
 Special speed-zone codes are combined as Unknown/other rather than interpreted as posted speed limits.

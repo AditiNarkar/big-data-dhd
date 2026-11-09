@@ -1,7 +1,7 @@
 "measure","n"
 "Person source rows",425352
 "Joined person rows",425352
-"Rows without matched vehicle",17088
+"Person rows without matched vehicle record (excluded from vehicle-group analysis)",17088
 "Rows without matched accident",0
 "Rows with matched unknown/not-applicable vehicle type",3581
 "Rows with unclassified injury outcome",0
